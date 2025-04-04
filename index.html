@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="icon"  href="css/logo/favicon..ico">
+</head>
+<body>
+    <nav class="flex">
+        <div class="nav-one invert"><img src="css/svg/logo.svg" alt="logo"></div>
+        <div class="nav-two flex justify-content align-items">
+            <button class="circle">
+                <img class="home invert" src="css/svg/home.svg" alt="">
+            </button>
+            <div class="search-bar">
+                <div class="flex justify-content align-items gap">
+                    <button class="size">
+                        <img class="search " src="css/svg/search.svg" alt="" >
+                    </button>
+                    <input type="text" placeholder="What do you want to play?">
+                </div>
+                <div>
+                    <img src="css/svg/line.svg" alt="" class="line">
+                <button class="size">
+                    <img class="browse" src="css/svg/browse.svg" alt="">
+                </button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="nav-three flex">
+            <ul class="flex">
+                <li>Premium</li>
+                <li>Support</li>
+                <li>Download</li>
+            </ul>
+            <img src="css/svg/line.svg" alt="" class="size invert line2">
+            <div class="install">
+                <img src="css/svg/download.svg" alt="" class="size invert">Install App
+            </div>
+            <button class="btn sign-up">Sign up</button>
+            <button class="btn login">Log in</button>
+        </div>
+    </nav>
+    <main class="flex">
+        <div class="left">
+            <div class=" flex align-items lib-div">
+                <span>Your Library</span>
+                <img class="plus invert" src="css/svg/plus.svg" alt="">
+            </div>
+            <div class="scrollbar">
+                <div class="scrollbar-container">
+                    <div class="left-card flex">
+                        <h3>Create your first playlist</h3>
+                        <p>It's easy, we'll help you</p>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="left-card flex">
+                        <h3>Let's find some podcasts to follow</h3>
+                        <p>We'll keep you updated on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-left">
+                <div class="foot-left-list">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety & Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+                <p>Cookies</p>
+                <div class="btn-lang">
+                    <button><img src="css/svg/lang.svg" alt="" class="size invert"><span>English</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="trending">
+                <h3>Trending Songs</h3>
+                <div class="card-container">
+                    <div class="card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
