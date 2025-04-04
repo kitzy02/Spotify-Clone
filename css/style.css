@@ -12,7 +12,7 @@ nav{
     justify-content: flex-start;
     align-items: center;
     border: 2px solid black;
-    height: 54px;
+    height: 8vh;
     padding: 4px;
     gap: 4px;
     color: #b3b3b3;
@@ -99,19 +99,20 @@ nav{
 
 }
 main{
-    padding: 22px 12px;
+    height: 70vh;
+    padding: 10px 12px;
     gap: 8px;
 }
 .left{
     background-color: #121212;
     width: 30vw;
-    height: 75vh;
+    height: 70vh;
     border-radius: 8px;
     position: relative;
 }
 .lib-div{
     justify-content: space-between;
-    padding:  20px 20px;
+    padding:  10px 20px;
     padding-bottom: 50px;
     font-size: large;
     
@@ -180,7 +181,7 @@ main{
     background-color: black;
     border-radius: 4px;
     height: 180px;
-    position: absolute;
+    position:absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -189,18 +190,19 @@ main{
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 100;
-    font-size: x-small;
+    font-size: 12px;
     font-family: 'CircularSp', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .foot-left-list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     padding: 8px;
+    row-gap: 4px;
 }
 .foot-left p{
     font-weight: 200;
-    font-size: small;
-    padding: 5px 8px;
+    font-size: 14px;
+    padding: 8px;
     font-family: 'CircularSp', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .btn-lang img{
@@ -222,4 +224,29 @@ main{
     font-weight:bold ;
     padding: 8px;
     margin: 15px 5px;
+}
+footer{
+    background-color: brown;
+    width: 99%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid black;
+    padding: 4px 2px;
+    font-weight: lighter;
+
+}
+footer div{
+    padding: 12px;
+}
+footer button{
+    height: 44px;
+    padding: 6px;
+    margin: 30px;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    font-weight: bold;
+    font-size: 16px;
 }
