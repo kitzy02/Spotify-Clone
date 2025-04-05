@@ -47,9 +47,9 @@ nav{
     background-color: #1f1f1fd1;
     border: none;
 }
-.search{
-    background-color: #1f1f1fd1;
-    border: 1px solid  #1f1f1fd1;
+.search-bar img{
+   background-color: #1f1f1fd1;
+   fill: #b3b3b3;
 }
 .browse{
     background-color: #1f1f1fd1;
@@ -113,7 +113,7 @@ main{
 .lib-div{
     justify-content: space-between;
     padding:  10px 20px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     font-size: large;
     
 }
@@ -168,10 +168,11 @@ main{
     padding: 8px;
 }
 .right{
-    background-color: deeppink;
+    
     width: 70vw;
-    height: 100%;
     border-radius: 8px;
+    background-color: #121212;
+    height: 70vh;
 
 }
 .plus{
@@ -249,4 +250,64 @@ footer button{
     width: 150px;
     font-weight: bold;
     font-size: 16px;
+}
+.trending{
+    padding:20px;
+}
+.card-container{
+    padding-top: 20px;
+}
+.card img{
+    height: 140px;
+    width: 140px;
+    padding: 4px;
+    border-radius: 12px;
+}
+.card{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    position: relative;
+}
+.track-title a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+.track-title{
+    padding:  3px 15px;
+}
+.track-artists a{
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+    
+}
+.track-artists span{
+    display: flex;
+    justify-content: flex-start;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+}
+.play-button{
+    position:absolute;
+    bottom: 12px;
+    right: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.card:hover .play-button {
+    opacity: 1;
+}
+.card:hover{
+    background-color: #1f1f1f;
+    border-radius: 7px;
 }
