@@ -113,16 +113,20 @@ main{
 .lib-div{
     justify-content: space-between;
     padding:  10px 20px;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
     font-size: large;
     
+}
+.scrollbar{
+    height: calc(100% - 280px);
+    position: relative;
 }
 .scrollbar-container{
     padding-left: 6px;
     padding-right:8px ;
     padding-top: 12px;
     display: flex;
-    height: 220px;
+    height: 100%;
     flex-direction: column;
     gap: 24px;
     overflow-y: auto;
@@ -152,6 +156,7 @@ main{
     align-items: flex-start;
     padding: 18px ;
     line-height: 22px;
+    min-height: 100px;
 }
 .left-card p{
     font-size: small;
@@ -168,11 +173,14 @@ main{
     padding: 8px;
 }
 .right{
-    
+    display: flex !important; 
+    flex-direction: column !important;
+    justify-content: flex-start;
     width: 70vw;
     border-radius: 8px;
     background-color: #121212;
     height: 70vh;
+    overflow-y:auto;
 
 }
 .plus{
@@ -227,7 +235,7 @@ main{
     margin: 15px 5px;
 }
 footer{
-    background-color: brown;
+    background-image: linear-gradient(to right, #af2896, #509bf5);
     width: 99%;
     height: 13vh;
     display: flex;
@@ -253,9 +261,15 @@ footer button{
 }
 .trending{
     padding:20px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 .card-container{
     padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .card img{
     height: 140px;
@@ -310,4 +324,39 @@ footer button{
 .card:hover{
     background-color: #1f1f1f;
     border-radius: 7px;
+}
+.foot-right{
+    background-color:  #121212;
+    
+    width: 65vw;
+    margin :0px 5px;
+    border-radius: 6px;
+    display: block;
+    padding: 25px 0px;
+    font-size: small;
+    
+}
+.foot-right-list{
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap:35px;
+}
+.foot-right-list h3{
+    font-size: larger;
+}
+.foot-right-list div ul{
+    list-style: none;
+    padding: 6px 0px;
+    line-height: 24px;
+}
+.foot-right-list div ul li{
+    color: #b3b3b3;
+    font-weight: lighter;
+}
+.socials{
+    display: flex;
+    gap: 5px;
+}
+.foot-right p{
+    padding: 20px;
 }
