@@ -20,6 +20,10 @@ nav{
 .nav-one{
    padding: 0 14px;
 }
+.nav-two{
+    gap: 7px;
+    padding-right: 7px;
+}
 .home{
     height: 25px;
     width: 25px;
@@ -47,10 +51,7 @@ nav{
     background-color: #1f1f1fd1;
     border: none;
 }
-.search-bar img{
-   background-color: #1f1f1fd1;
-   fill: #b3b3b3;
-}
+
 .browse{
     background-color: #1f1f1fd1;
 }
@@ -67,7 +68,7 @@ nav{
 }
 .login{
     border: 1px solid black;
-    height: 48px;
+    height: 45px;
     width: 109px;
     border-radius: 23px;
     margin: 3px;
@@ -360,3 +361,73 @@ footer button{
 .foot-right p{
     padding: 20px;
 }
+.player-controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+   
+}
+.control-btn {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+  
+.control-btn:hover {
+    transform: scale(1.2);
+}
+.controls-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.track-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 4px;
+}
+.track-image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 4px;
+    padding-top: 2px;
+}
+.track-title1 a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.track-artists1 a{
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    
+}
+.seekbar-container{
+    display: flex;
+    
+
+}
+.seekbar {
+    position: relative;
+    height: 2px;
+    background: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seekbar .circle {
+    position: absolute;
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+  }

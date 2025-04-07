@@ -4,6 +4,9 @@
 .justify-content{
     justify-content: center;
 }
+.justify-flex-start{
+    justify-content: flex-start;
+}
 .align-items{
     align-items: center;
 }
@@ -13,6 +16,7 @@
 .size{
     height: 32px;
     width: 32px;
+    
 }
 .size2{
     height: 22px;
@@ -36,6 +40,14 @@
         border: none;
         outline: none;
         box-shadow: none;
+}
+.button-nav{
+    background-color: #1f1f1fd1;
+    border: none;
+    box-shadow: none;
+}
+.color{
+    background-color: #1f1f1fd1;
 }
 .circle-green{
     background-color: #1db954;
